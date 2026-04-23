@@ -1,5 +1,5 @@
 //Episode-07 | sync, async, setTimeoutZero - code
-const fs = require("fs")
+const fs = require("fs") // require("node:fs") both are correct , it mean it node core module 
 const https = require('https')
 console.log("Hello Tayyab")
 var a=100
