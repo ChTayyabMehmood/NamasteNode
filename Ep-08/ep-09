@@ -1,0 +1,12 @@
+Episode-09 | libuv & Event Loop
+
+Node JS have two main Component: 
+v8 engine and LibVu 
+
+this Episode is all about Libuv 
+
+All code is run in v8 but api call and some task are offloading to lib uv 
+Asynchronous I/O (non block i/o)
+is only possibe due to libuv
+
+incomplete: today study only 5 minutes , 
