@@ -10,3 +10,42 @@ Asynchronous I/O (non block i/o)
 is only possibe due to libuv
 
 incomplete: today study only 5 minutes , 
+
+
+saturday : 
+
+if a js is busy is other sync task , 
+the libuv : like apicall and settime out and file read same arrive at at same time , they are want inside the callback queue inside libuv
+
+event loops : is continuous check if any v8 engine is idle and checking the is callback is empty or not ,, it quick pass the callback queue task result to v8 engine
+
+how event loops: 
+
+event loop 
+
+timer -> poll -> check -> close ->timer(again loop)
+
+first it piority :  timer 
+set time out 
+set intervals 
+
+seond piority: poll -> important phase 
+i/o callbacks 
+->incoming connection
+-> data
+->fs , crypto,http , .get 
+
+check:
+set immediate 
+
+
+close: 
+all close phase, mostly use for closing and cleaning type of thing 
+like closing a socket; 
+
+but some important point to be noted : 
+before every phase : 
+event loops follows inside cycle 
+
+
+process.nextTick() -> promise callbacks 
