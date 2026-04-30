@@ -40,7 +40,7 @@ set immediate
 
 
 close: 
-all close phase, mostly use for closing and cleaning type of thing 
+all close phase, mostly use for closing and cleaning type of  
 like closing a socket; 
 
 but some important point to be noted : 
